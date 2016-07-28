@@ -9,4 +9,4 @@ app.use("/node_modules", express.static(__dirname + '/node_modules'));
 app.use("/ang", express.static(__dirname + '/ang'));
 
 
-app.listen(9000);
+app.listen(process.env.PORT || 9000);;
